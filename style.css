@@ -1,0 +1,119 @@
+:root{
+    --branco: #faf7fd;
+    --roxo: #bb99dd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body,
+html {
+    font-family: 'poppins';
+    background: var(--branco);
+}
+
+.conteudo{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo .conteudo-socialtree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-socialtree .avatar{
+    height: 213px;
+    width: 213px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--roxo);
+    border-radius: 50%;
+}
+
+.conteudo-socialtree .avatar img{
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+}
+
+/* ajustar o usuario do insta */
+.conteudo-socialtree .user-insta{
+    color: var(--roxo);
+    margin-top: 15px;
+}
+
+.conteudo-socialtree .links-conteudo{
+    margin-top: 17px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.links-conteudo .link{
+    /* adiciona margem ao topo */
+    margin-top:  16px;
+    /* define a altura do elemento */
+    height: inherit;
+    width: 325px;
+    /* define as bordas do elemento */
+    border: 2px solid var(--roxo);
+    /* arredonda as pontas das bordas */
+    border-radius: 4px;
+    /* define o tamanho da fonte */
+    font-size: 16px;
+    /* define o peso da fonte */
+    font-weight: 600;
+    /* define o texto todo para letras maiusculas */
+    text-transform: uppercase;
+    /* centraliza o texto ao meio */
+    text-align: center;
+    /* Paddding = definição de espaçamentos 
+    12px pra cima e pra baixo e 0 nas laterias */
+    padding: 12px 0;
+
+    /* efeitin */
+    transition: ease 0.3s;
+}
+
+/* hover = quando o mouse passsar por cima do elemento */
+.links-conteudo .link:hover{
+    background: var(--roxo);
+    color: var(--branco);
+}
+
+.conteudo-socialtree .icones-conteudo{
+    margin-top: 68px;
+
+    /* como se fosse uma grade, que contem colunas e linhas */
+    display: grid;
+    /* repeat = repete 5 * 1 fração do tamanho dos itens */
+    grid-template-columns: repeat(5, 1fr);
+    /* gap = espaço entre os itens dentro das colunas */
+    gap: 29px;
+}
+
+.icones-conteudo .icones{
+    /* aumenta o tamanho da icone */
+    transform: scale(0.9);
+    /* o tempo que o icone exerce a transição */
+    transition: ease 0.3s;
+}
+
+.icones-conteudo .icones:hover{
+    transform: scale(1);
+}

@@ -96,24 +96,24 @@ html {
     color: var(--branco);
 }
 
-.conteudo-socialtree .icones-conteudo{
-    margin-top: 68px;
+/* .conteudo-socialtree .icones-conteudo{ */
+    /* margin-top: 68px; */
 
     /* como se fosse uma grade, que contem colunas e linhas */
-    display: grid;
+    /* display: grid; */
     /* repeat = repete 5 * 1 fração do tamanho dos itens */
-    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-columns: repeat(5, 1fr); */
     /* gap = espaço entre os itens dentro das colunas */
-    gap: 29px;
-}
+    /* gap: 29px; */
+/* } */
 
-.icones-conteudo .icones{
+/* .icones-conteudo .icones{ */
     /* aumenta o tamanho da icone */
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
     /* o tempo que o icone exerce a transição */
-    transition: ease 0.3s;
-}
+    /* transition: ease 0.3s; */
+/* } */
 
-.icones-conteudo .icones:hover{
+/* .icones-conteudo .icones:hover{
     transform: scale(1);
-}
+} */
